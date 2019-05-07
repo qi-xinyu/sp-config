@@ -8,8 +8,13 @@ spring:
     
 #server:
 #  port: 8101
+        
+  rabbitmq:
+      host: 192.168.88.139
+      port: 5672
+      username: admin
+      password: admin
 
-  
 eureka:
   client:
     service-url:
@@ -21,11 +26,6 @@ management:
       exposure:
         include: refresh
         
-  rabbitmq:
-    host: 192.168.88.139
-    port: 5672
-    username: admin
-    password: admin
 ---
 spring:
   profiles: user1

@@ -2,6 +2,12 @@ spring:
   application:
     name: turbin
     
+  rabbitmq:
+      host: 192.168.88.139
+      port: 5672
+      username: admin
+      password: admin
+    
 server:
   port: 5001
   
@@ -13,9 +19,3 @@ eureka:
 turbine:
   app-config: order-service, zuul
   cluster-name-expression: new String("default")
-
-  rabbitmq:
-      host: 192.168.88.139
-      port: 5672
-      username: admin
-      password: admin

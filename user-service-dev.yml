@@ -21,6 +21,11 @@ management:
       exposure:
         include: refresh
         
+  rabbitmq:
+    host: 192.168.64.140
+    port: 5672
+    username: admin
+    password: admin
 ---
 spring:
   profiles: user1
